@@ -1,0 +1,31 @@
+.splash {
+  display: flex;
+  flex-direction: column;
+
+  &-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 85vh;
+
+    &-left {
+      animation: moveInLeft 1.5s ease-in-out;
+    }
+
+    &-right {
+      animation: moveInRight 1.5s ease-in-out;
+    }
+  }
+
+  &-links {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    width: 90%;
+    margin: 0 auto;
+
+    & a {
+      font-weight: 300;
+    }
+  }
+}

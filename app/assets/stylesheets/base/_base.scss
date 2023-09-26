@@ -1,0 +1,21 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  // width: 37.5rem;
+  font-size: 1.6rem;
+  background-color: #e9e9e9a4;
+  // border: 1px solid $color-text;
+  // margin: 0 auto;
+  height: 100vh;
+}
