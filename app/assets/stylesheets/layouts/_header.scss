@@ -1,0 +1,30 @@
+.header {
+  background-color: $color-primary;
+  color: $color-white;
+  display: flex;
+  padding: 1rem 0.5rem;
+  justify-content: space-between;
+  align-items: center;
+
+  & img {
+    width: 2.4rem;
+    cursor: pointer;
+  }
+
+  & p {
+    text-transform: uppercase;
+    font-size: 2.2rem;
+  }
+
+  &-btn {
+    text-decoration: none;
+    display: inline-block;
+    font-size: $default-font-size;
+    text-align: center;
+    color: $color-white;
+    letter-spacing: 0.15rem;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+  }
+}
