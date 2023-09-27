@@ -13,6 +13,10 @@
       border-bottom: 0.5px solid rgba($color-text, 0.2);
       font-size: $default-font-size;
 
+      &::placeholder {
+        color: rgba($color-text, 0.5);
+      }
+
       &:focus {
         outline: none;
       }
