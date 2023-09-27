@@ -1,2 +1,21 @@
-<h1>Expenses#new</h1>
-<p>Find me in app/views/expenses/new.html.erb</p>
+<%= form_with(model: [@group, @expense], local: true) do |f| %>
+  <div class="header">
+    <%= link_to group_expenses_path(@group) do %>
+      <%= image_tag 'back_arrow.svg' %>
+    <% end %>
+    <p>Add new transaction</p>
+    <div class="actions">
+      <%= f.submit "Save", class: "header-btn" %>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="field">
+      <%= f.text_field :name, autofocus: true, placeholder: 'Transaction name' %>
+    </div>
+
+    <div class="field">
+      <%= f.number_field :amount, placeholder: 'Amount' %>
+    </div>
+  </div>
+<% end %>

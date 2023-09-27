@@ -10,6 +10,6 @@ Rails.application.routes.draw do
   end
 
   resources :groups, only: [:index, :new, :create] do
-    resources :expenses, only: [:index, :new]
+    resources :expenses, only: [:index, :new, :create]
   end
 end
