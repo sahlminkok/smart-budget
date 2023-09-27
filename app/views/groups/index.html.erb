@@ -13,10 +13,15 @@
     <% @groups.each do |group| %>
       <%= link_to group_expenses_path(group) do %>
         <div class="groups-group">
-          <div class="groups-group-img">
-            <img src="<%= group.icon %>" />
+          <div class="groups-group-left">
+            <div class="groups-group-left-img">
+              <img src="<%= group.icon %>" />
+            </div>
+            <div class="groups-group-left-name">
+              <span><%= group.name %></span>
+              <span><%= group.created_at.to_date %></span>
+            </div>
           </div>
-          <p><%= group.name %></p>
           <p>₦<%= group.total_amount %></p>
         </div>
       <% end %>
