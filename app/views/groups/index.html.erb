@@ -14,10 +14,10 @@
       <%= link_to group_expenses_path(group) do %>
         <div class="groups-group">
           <div class="groups-group-img">
-          <%= image_tag group.icon %>
+            <img src="<%= group.icon %>" />
           </div>
           <p><%= group.name %></p>
-          <p>$<%= group.total_amount %></p>
+          <p>₦<%= group.total_amount %></p>
         </div>
       <% end %>
     <% end %>
