@@ -3,6 +3,11 @@
   margin: 0 auto;
   margin-top: 2rem;
 
+  & a {
+    text-decoration: none;
+    color: $color-text;
+  }
+
   &-group {
     display: flex;
     background-color: $color-white;

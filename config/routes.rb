@@ -9,5 +9,7 @@ Rails.application.routes.draw do
     root "splash#index"
   end
 
-  resources :groups, only: [:index, :new]
+  resources :groups, only: [:index, :new] do
+    resources :expenses, only: [:index, :new]
+  end
 end

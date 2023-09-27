@@ -1,0 +1,29 @@
+<div class="transactions">
+  <div class="header">
+    <%= link_to root_path do %>
+      <%= image_tag 'back_arrow.svg' %>
+    <% end %>
+    <p>Transactions</p>
+    <%= link_to new_group_expense_path do %>
+      <%= image_tag 'plus.svg' %>
+    <% end %>
+  </div>
+
+  <div class="transactions-total_amount">
+    <p>Total Amount:</p>
+    <p>₦<%= @group.total_amount %></p>
+  </div>
+
+  <div class="expenses">
+    <% @expenses.each do |expense| %>
+      <div class="expenses-expense">
+        <span><%= expense.name %></span>
+        <span>₦<%= expense.amount %></span>
+      </div>
+    <% end %>
+  </div>
+
+  <div class="btn-green">
+    <%= link_to 'Add new transaction', new_group_expense_path, class: 'btn' %>
+  </div>
+</div>
