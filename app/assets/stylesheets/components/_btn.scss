@@ -3,7 +3,7 @@
   &:visited {
     text-transform: uppercase;
     text-decoration: none;
-    padding: 1.5rem 4rem;
+    padding: 1.5rem 3rem;
     display: inline-block;
     border-radius: 0.5rem;
     font-size: $default-font-size;
@@ -30,9 +30,9 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: 8rem;
     background-color: $color-secondary;
     margin-top: auto;
+    padding: 1.5rem;
 
     & a {
       width: 90%;
