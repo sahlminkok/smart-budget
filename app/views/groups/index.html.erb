@@ -11,13 +11,15 @@
 
   <div class="groups">
     <% @groups.each do |group| %>
-      <div class="groups-group">
-        <div class="groups-group-img">
-        <%= image_tag group.icon %>
+      <%= link_to group_expenses_path(group) do %>
+        <div class="groups-group">
+          <div class="groups-group-img">
+          <%= image_tag group.icon %>
+          </div>
+          <p><%= group.name %></p>
+          <p>$<%= group.total_amount %></p>
         </div>
-        <p><%= group.name %></p>
-        <p>$<%= group.total_amount %></p>
-      </div>
+      <% end %>
     <% end %>
   </div>
 
