@@ -16,7 +16,14 @@
     </div>
 
     <div class="field">
-      <%= f.text_field :icon, placeholder: 'Icon url' %>
+      <%= f.select :icon, options_for_select([
+        ['Select an icon', ''],
+        ['Rent', 'rent.png'],
+        ['Tour', 'travel.png'],
+        ['Shopping', 'shopping.png'],
+        ['Grocery', 'grocery.png'],
+        ['Others', 'other.png'],
+      ], selected: @group.icon), {}, class: 'field-select' %>
     </div>
   </div>
 <% end %>
