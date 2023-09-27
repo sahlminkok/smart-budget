@@ -5,4 +5,8 @@ class Group < ApplicationRecord
   has_many :expenses, through: :group_expenses
 
   validates :name, presence: true, length: { in: 3..25 }
+
+  def total_amount
+    expenses.sum(:amount)
+  end
 end

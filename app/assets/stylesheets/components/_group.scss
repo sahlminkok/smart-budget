@@ -1,0 +1,31 @@
+.groups {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  &-group {
+    display: flex;
+    background-color: $color-white;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    align-items: center;
+    box-shadow: 0 0 0.5rem rgba($color-text, 0.3);
+
+    &-img {
+      width: 9rem;
+      height: 9rem;
+      background-image: url(image.svg);
+      background-color: rgba($color-text, 0.3);
+
+      & img {
+        width: 9rem;
+        height: 9rem;
+      }
+    }
+
+    & p:last-of-type {
+      font-weight: 700;
+    }
+  }
+}
