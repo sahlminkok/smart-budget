@@ -1,2 +1,22 @@
-<h1>Groups#new</h1>
-<p>Find me in app/views/groups/new.html.erb</p>
+<%= form_with(model: @group, local: true) do |f| %>
+  <div class="header">
+    <%= link_to root_path do %>
+      <%= image_tag 'back_arrow.svg' %>
+      &nbsp;&nbsp;
+    <% end %>
+    <p>Add new category</p>
+    <div class="actions">
+      <%= f.submit "Save", class: "header-btn" %>
+    </div>
+  </div>
+
+  <div class="form">
+    <div class="field">
+      <%= f.text_field :name, autofocus: true, placeholder: 'Category name' %>
+    </div>
+
+    <div class="field">
+      <%= f.text_field :icon, placeholder: 'Icon url' %>
+    </div>
+  </div>
+<% end %>
