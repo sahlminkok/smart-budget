@@ -22,6 +22,15 @@
       }
     }
 
+    &-select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid rgba($color-text, 0.2);
+      border-radius: 0.5rem;
+      color: rgba($color-text, 0.5);
+      font-size: $default-font-size;
+    }
+
     & .check_box {
       width: 2rem;
     }
