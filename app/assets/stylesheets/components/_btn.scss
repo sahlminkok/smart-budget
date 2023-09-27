@@ -19,4 +19,26 @@
   &-bottom {
     color: $color-text;
   }
+
+  &-logout {
+    background-color: transparent;
+    border: none;
+  }
+
+  &-green {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 8rem;
+    background-color: $color-secondary;
+    margin-top: auto;
+
+    & a {
+      width: 90%;
+      color: $color-white;
+      border: 1px solid $color-white;
+      cursor: pointer;
+    }
+  }
 }
