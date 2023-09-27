@@ -1,0 +1,17 @@
+.expenses {
+  width: 94%;
+  margin: 0 auto;
+  font-weight: 300;
+
+  &-expense {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
+    background-color: $color-white;
+    margin-top: 0.8rem;
+
+    & span:last-of-type {
+      font-weight: 700;
+    }
+  }
+}
