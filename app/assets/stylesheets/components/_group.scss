@@ -17,19 +17,31 @@
     align-items: center;
     box-shadow: 0 0 0.5rem rgba($color-text, 0.3);
 
-    &-img {
-      width: 9rem;
-      height: 9rem;
-      background-image: url(image.svg);
-      background-color: rgba($color-text, 0.3);
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
 
-      & img {
+      &-img {
         width: 9rem;
         height: 9rem;
+        background-image: url(image.svg);
+        background-color: rgba($color-text, 0.3);
+  
+        & img {
+          width: 9rem;
+          height: 9rem;
+        }
+      }
+  
+      &-name {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
       }
     }
 
-    & p:last-of-type {
+    & p {
       font-weight: 700;
     }
   }
