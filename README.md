@@ -12,6 +12,8 @@
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [🚶‍♀️🚶‍♀️ Walk Through ](#️️-walk-through-)
   - [💻 Getting Started ](#-getting-started-)
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
@@ -63,6 +65,18 @@
 - **Categorized Transactions**
 - **Budget Insights**
 - **Mobile Accessibility**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://smartbudget-mhwp.onrender.com)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+## 🚶‍♀️🚶‍♀️ Walk Through <a name="live-demo"></a>
+
+- [Walk through video](https://www.loom.com/share/be90b3e8f33944849bcbd4a4ffe62ec3?sid=3e8794c5-c60f-45e8-9671-e7be21c9bdb1)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
