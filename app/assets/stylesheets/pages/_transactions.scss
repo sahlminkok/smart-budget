@@ -1,0 +1,16 @@
+.transactions {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+
+  &-total_amount {
+    display: flex;
+    justify-content: space-between;
+    background-color: $color-white;
+    padding: 1rem;
+
+    & p:last-of-type {
+      font-weight: 700;
+    }
+  }
+}

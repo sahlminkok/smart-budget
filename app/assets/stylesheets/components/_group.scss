@@ -1,0 +1,49 @@
+.groups {
+  width: 94%;
+  margin: 0 auto;
+  margin-top: 2rem;
+
+  & a {
+    text-decoration: none;
+    color: $color-text;
+  }
+
+  &-group {
+    display: flex;
+    background-color: $color-white;
+    justify-content: space-between;
+    padding: 1rem;
+    margin-bottom: 0.8rem;
+    align-items: center;
+    box-shadow: 0 0 0.5rem rgba($color-text, 0.3);
+
+    &-left {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &-img {
+        width: 9rem;
+        height: 9rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+          width: 7.5rem;
+          height: 7.5rem;
+        }
+      }
+
+      &-name {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+    }
+
+    & p {
+      font-weight: 700;
+    }
+  }
+}

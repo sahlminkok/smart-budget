@@ -1,0 +1,42 @@
+.form {
+  padding: 0.5rem;
+  background-color: $color-white;
+  margin-top: 2rem;
+
+  & .field {
+    padding-bottom: 0.4rem;
+
+    & input {
+      width: 100%;
+      border: none;
+      padding: 1rem 0.5rem;
+      border-bottom: 0.5px solid rgba($color-text, 0.2);
+      font-size: $default-font-size;
+
+      &::placeholder {
+        color: rgba($color-text, 0.5);
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    &-select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid rgba($color-text, 0.2);
+      border-radius: 0.5rem;
+      color: rgba($color-text, 0.5);
+      font-size: $default-font-size;
+    }
+
+    & .check_box {
+      width: 2rem;
+    }
+
+    & .last-input {
+      border-bottom: none;
+    }
+  }
+}

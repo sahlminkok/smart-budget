@@ -1,0 +1,34 @@
+<div class="categories">
+  <div class="header">
+    <%= link_to new_group_path do %>
+      <%= image_tag 'plus.svg' %>
+    <% end %>
+    <p>Categories</p>
+    <%= button_to destroy_user_session_path, method: :delete, class: "btn-logout" do %>
+      <%= image_tag 'logout.svg' %>
+    <% end %>
+  </div>
+
+  <div class="groups">
+    <% @groups.each do |group| %>
+      <%= link_to group_expenses_path(group) do %>
+        <div class="groups-group">
+          <div class="groups-group-left">
+            <div class="groups-group-left-img">
+              <img src="<%= image_path(group.icon) %>" alt="<%= group.icon %>" />
+            </div>
+            <div class="groups-group-left-name">
+              <span><%= group.name %></span>
+              <span><%= group.created_at.to_date %></span>
+            </div>
+          </div>
+          <p>₦<%= group.total_amount %></p>
+        </div>
+      <% end %>
+    <% end %>
+  </div>
+
+  <div class="btn-green">
+    <%= link_to 'Add new category', new_group_path, class: 'btn' %>
+  </div>
+</div>

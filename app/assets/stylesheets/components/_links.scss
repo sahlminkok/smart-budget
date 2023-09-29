@@ -1,0 +1,9 @@
+.links {
+  text-align: center;
+  padding-top: 0.4rem;
+
+  & a {
+    text-decoration: none;
+    color: $color-primary;
+  }
+}
