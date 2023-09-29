@@ -76,7 +76,7 @@
 
 ## 🚶‍♀️🚶‍♀️ Walk Through <a name="live-demo"></a>
 
-- [Walk through video](https://www.loom.com/share/be90b3e8f33944849bcbd4a4ffe62ec3?sid=3e8794c5-c60f-45e8-9671-e7be21c9bdb1)
+- [Walk through video](https://drive.google.com/file/d/1Wpj86eBYtllNz-u2mizgruiK3Z4xZ_ZF/view?usp=sharing)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
