@@ -19,8 +19,9 @@
       <%= f.select :icon, options_for_select([
         ['Select an icon', ''],
         ['Rent', 'rent.png'],
-        ['Tour', 'travel.png'],
+        ['Transport', 'vehicles.png'],
         ['Shopping', 'shopping.png'],
+        ['Tour', 'travel.png'],
         ['Grocery', 'grocery.png'],
         ['Others', 'other.png'],
       ], selected: @group.icon), {}, class: 'field-select' %>
