@@ -1,5 +1,6 @@
 class ExpensesController < ApplicationController
   before_action :authenticate_user!
+  before_action :find_expense, only: [:destroy]
 
   def index
     @group = Group.find(params[:group_id])
@@ -25,9 +26,19 @@ class ExpensesController < ApplicationController
     end
   end
 
+  def destroy
+    @expense.destroy
+    redirect_to group_expenses_path(@group), notice: 'Transaction was successfully deleted.'
+  end
+
   private
 
   def expense_params
     params.require(:expense).permit(:name, :amount)
+  end
+
+  def find_expense
+    @group = Group.find(params[:group_id])
+    @expense = @group.expenses.find(params[:id])
   end
 end

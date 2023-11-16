@@ -17,8 +17,13 @@
   <div class="expenses">
     <% @expenses.each do |expense| %>
       <div class="expenses-expense">
-        <span><%= expense.name %></span>
-        <span>₦<%= expense.amount %></span>
+        <h4><%= expense.name %></h4>
+        <div class="expenses-expense-group">
+          <%= button_to group_expense_path(@group, expense), method: :delete, class: "destroy-button" do %>
+            <%= image_tag "delete.svg", alt: "Delete", class: "destroy-image" %>
+          <% end %>
+          <span>₦<%= expense.amount %></span>
+        </div>
       </div>
     <% end %>
   </div>

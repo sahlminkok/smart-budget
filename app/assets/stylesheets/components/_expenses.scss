@@ -9,9 +9,30 @@
     padding: 1.5rem;
     background-color: $color-white;
     margin-top: 0.8rem;
+    align-items: center;
 
-    & span:last-of-type {
-      font-weight: 700;
+    h4 {
+      text-transform: capitalize;
+    }
+
+    &-group {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+
+      button {
+        background-color: transparent;
+        border: none;
+        width: 2rem;
+
+        img {
+          width: 100%;
+        }
+      }
+
+      span {
+        font-weight: 700;
+      }
     }
   }
 }
